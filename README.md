@@ -1,14 +1,17 @@
-# 三大公教会信经 · 欧陆改革宗深读（v20261017-9）
+# 三大公教会信经 · 欧陆改革宗深读（v20261020-10）
 
-使徒信经、尼西亚信经、亚他那修信经，以及三项联合信条（比利时信条、海德堡要理问答、多特信经）的中文综合学习网站（欧陆改革宗视角）。
+使徒信经、尼西亚信经、亚他那修信经，以及三项联合信条（比利时信条、海德堡要理问答、多特信经）的中文综合学习网站（欧陆改革宗视角）。原文逐字取自 CCI《赞美手册》中文版；CCI 没有的内容用《中国改革宗教会敬拜手册》2015 版补充，逐字摘引并标页码（tools/verify_pdf.py 核对）。
 
-## 在线访问（v20261017-9 · GROKstudy，3 个部署）
-- GitHub Pages：https://07-je-grok-love-personal-20260928.github.io/three-ecumenical-creeds-study-continental-20261017-v9-GROKstudy/
-- Netlify：https://three-ecumenical-creeds-study-continental-20261017-v9-grokstudy.netlify.app/
-- Surge：https://three-ecumenical-creeds-study-continental-20261017-v9-grokstudy.surge.sh/
-- 仓库：https://github.com/07-Je-Grok-Love-Personal-20260928/three-ecumenical-creeds-study-continental-20261017-v9-GROKstudy
+## 在线访问（v20261020-10 · GROKstudy，3 个部署）
+- GitHub Pages：https://07-je-grok-love-personal-20260928.github.io/three-ecumenical-creeds-study-continental-20261020-v10-GROKstudy/
+- Netlify：https://three-ecumenical-creeds-study-continental-20261020-v10grokstudy.netlify.app/
+- Surge：https://three-ecumenical-creeds-study-continental-20261020-v10grokstudy.surge.sh/
+- 仓库：https://github.com/07-Je-Grok-Love-Personal-20260928/three-ecumenical-creeds-study-continental-20261020-v10-GROKstudy
 
-旧版本（仍在线，保留作为前一版本 v20261014-8）：[Netlify](https://three-ecumenical-creeds-study-continental-20261014.netlify.app/) · [Surge](https://three-ecumenical-creeds-study-continental-20261014.surge.sh/)。旧的 GitHub Pages 地址随仓库更名已失效。
+域名说明：Netlify 与 Surge 的子域名最长 63 个字符且只能小写；“…-20261020-v10-grokstudy”会是 64 个字符，所以域名里 v10 和 grokstudy 之间少一个连字符（v10grokstudy）。
+
+**旧版本（仍在线）：** v20261017-9：[Netlify](https://three-ecumenical-creeds-study-continental-20261017-v9-grokstudy.netlify.app/) · [Surge](https://three-ecumenical-creeds-study-continental-20261017-v9-grokstudy.surge.sh/)；v20261014-8：[Netlify](https://three-ecumenical-creeds-study-continental-20261014.netlify.app/) · [Surge](https://three-ecumenical-creeds-study-continental-20261014.surge.sh/)。
+**注意：** 仓库每次更名后，旧的 GitHub Pages 地址都会失效；GitHub 只转发仓库地址，不转发 Pages。请用上面的新地址。
 
 ## 页面（13 页，共用可隐藏目录与统一编号）
 | 页面 | 内容 |
@@ -40,6 +43,7 @@ python3 tools/check_links.py   # 站内链接/锚点/目录检查
 python3 tools/verify_exact.py  # 原文一致性检查
 python3 tools/verify_recite.py creeds.html   # 背诵版（一条一行）与 CCI 原文逐字一致
 python3 tools/verify_refs.py   # 经文参考行内列表 == CCI 数据
+python3 tools/verify_pdf.py    # 敬拜手册 2015 版摘引 == PDF 印刷正文（data/pdf/pdf2015.json，按页）
 python3 tools/qa.py [--nojs] [--rm]   # Playwright 五个宽度
 python3 tools/qa_toc.py hc.html --shots   # 目录拖拽/键盘/触摸/持久化
 python3 tools/audit_all.py more.py   # 引文核对（需本地爬取缓存）
