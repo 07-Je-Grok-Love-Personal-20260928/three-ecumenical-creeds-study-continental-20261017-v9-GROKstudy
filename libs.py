@@ -111,6 +111,8 @@ def part_bc():
         b += L2(gid,num,gt,x)
     import c_refx
     b += c_refx.l2('bc')
+    import storymap as SM
+    b += L2("bc-sm","x","故事线与思维导图", SM.block("bc"))
     return L1("bc","八","比利时信条全文（37条）","scroll","德布利（Guido de Brès）所著；CCI 中文版逐字收录。", b)
 
 # ===== 九、海德堡 =====
@@ -144,6 +146,10 @@ def part_hc():
     b += note("<b>分组说明：</b>“第一部/第二部/第三部”及“子神和我们的得赎”“圣灵神和我们的成圣”“我们得称为义”“圣言与圣礼”“圣洗礼”“圣餐”“十诫”“祷告”等标题均为 CCI 页面的目录名；“主日5–10”一组 CCI 未另立标题，本站按其内容（中保、信心、使徒信经、三一、创造与护理）命名。")
     import c_refx
     b += c_refx.l2('hc')
+    import pdf15
+    b += L2("hc-pdf","9.x","敬拜手册 2015 的印刷小标题", '<p>CCI 只分三部分；敬拜手册 2015 版正文另印 11 个小标题，可作背 52 主日的路标（小标题是手册的编排，不是问答原文）。</p>'+pdf15.hc_heads_table(lambda n: f'<a href="#ld{n}">主日{n}</a>'))
+    import storymap as SM
+    b += L2("hc-sm","x","故事线与思维导图", SM.block("hc"))
     return L1("hc","九","海德堡要理问答全文（129问）","scroll","乌尔西努与俄利维亚努（1563）；CCI 中文版逐字收录，含 52 主日。", b)
 
 # ===== 十、多特 =====
@@ -166,4 +172,6 @@ def part_dort():
         b += L2(f"dt-{h['id']}",num,h["title"]+f'（项{h["num"]}）',core_strip(DORT_CORE[h["id"]])+x+f'<p class="src">{src_link(h["url"],"CCI 本项总页")}</p>')
     import c_refx
     b += c_refx.l2('dort')
+    import storymap as SM
+    b += L2("dort-sm","x","故事线与思维导图", SM.block("dort"))
     return L1("dort","十","多特信经全文（四项教义）","scroll","1618–1619 多特大会；CCI 中文版逐字收录，含正反两面（教义与错谬反驳）。", b)
