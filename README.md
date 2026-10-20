@@ -1,22 +1,32 @@
 # 三大公教会信经 · 欧陆改革宗深读
 
-**版本标签：three-ecumenical-creeds-study-continental-20261020-v10-GROKstudy**（页脚版本 v20261020-10）
+**版本标签：three-ecumenical-creeds-study-continental-20261020-v11-GROKstudy**（页脚版本 v20261020-11）
 
 使徒信经、尼西亚信经、亚他那修信经，以及三项联合信条（比利时信条、海德堡要理问答、多特信经）的中文综合学习网站（欧陆改革宗视角）。原文逐字取自 CCI《赞美手册》中文版；CCI 没有的内容用《中国改革宗教会敬拜手册》2015 版补充，逐字摘引并标页码（tools/verify_pdf.py 核对）。
 
-## 当前版本链接（v10）
+## 当前版本链接（v11）
 - GitHub Pages：https://07-je-grok-love-personal-20260928.github.io/three-ecumenical-creeds-study-continental-GROKstudy/
-- Netlify：https://three-ecumenical-creeds-study-continental-20261020-v10-grokser.netlify.app/
-- Surge：https://three-ecumenical-creeds-study-continental-20261020-v10-grokser.surge.sh/
+- Netlify：https://three-ecumenical-creeds-study-continental-20261020-v11-grokser.netlify.app/
+- Surge：https://three-ecumenical-creeds-study-continental-20261020-v11-grokser.surge.sh/
 - 仓库：https://github.com/07-Je-Grok-Love-Personal-20260928/three-ecumenical-creeds-study-continental-GROKstudy
 
 命名：仓库名只含主题（…-GROKstudy，以后不再改名）；Netlify / Surge 域名为“主题-日期-版本-grokser”（这两处只能小写），每个版本一个新域名，旧域名继续在线。
+
+## 发布（Releases）——随时恢复
+
+每个上线版本都在 GitHub 打了固定标签与 Release（时间为台北时间 UTC+8）。恢复：`git checkout <标签>` 后重新部署，或在 Releases 页下载源码包。
+
+| 标签 | 说明 | 链接 |
+|---|---|---|
+| `v20261020-11` | v11 当前版本：性能、笔记标记系统、引号标注 | https://github.com/07-Je-Grok-Love-Personal-20260928/three-ecumenical-creeds-study-continental-GROKstudy/releases/tag/v20261020-11 |
+| `v20261020-10` | v10：CCI 逐字、故事线、思维导图、敬拜手册 2015 补缺 | https://github.com/07-Je-Grok-Love-Personal-20260928/three-ecumenical-creeds-study-continental-GROKstudy/releases/tag/v20261020-10 |
 
 ## 版本记录
 
 | 版本 | 更新内容 | 仍可访问的链接 |
 |---|---|---|
-| **v10 · v20261020-10**（当前） | 用敬拜手册 2015 版补 CCI 缺的内容（主日敬拜中的信经、HC 印刷小标题），并与 CCI 逐字比对，差异列在来源页（正文仍用 CCI）；三信经与 HC、BC、Dort 各加五步动画故事线（每步带出处）与思维导图；按页面区分配色。 | 见上（同一版本另有备用镜像：[Netlify](https://three-ecumenical-creeds-study-continental-20261020-v10-ccser.netlify.app/) · [Surge](https://three-ecumenical-creeds-study-continental-20261020-v10-ccser.surge.sh/)） |
+| **v11 · v20261020-11**（当前） | 性能：IntersectionObserver 滚动高亮、transform 进度条、目录折叠写进 HTML（CLS 约 0.1–0.26 → ≤0.06）、减少毛玻璃、长小节按需渲染、去掉全屏漂移动画；笔记标记系统（同三项联合信条站，图例可关闭）；背诵版按段着色、每行首句加粗（不改原文）；241 个未在 CCI 逐字找到的引号短语去掉引号，标为“本站译文/其他译本措辞”（44）或“本站用语”（197）；记忆页三信经词频图与标记速查表；删去讲解页的抓取/程序说明与重复列。 | 见上 |
+| v10 · v20261020-10 | 用敬拜手册 2015 版补 CCI 缺的内容（主日敬拜中的信经、HC 印刷小标题），并与 CCI 逐字比对，差异列在来源页（正文仍用 CCI）；三信经与 HC、BC、Dort 各加五步动画故事线（每步带出处）与思维导图；按页面区分配色。 | 旧版本：[Netlify](https://three-ecumenical-creeds-study-continental-20261020-v10-grokser.netlify.app/) · [Surge](https://three-ecumenical-creeds-study-continental-20261020-v10-grokser.surge.sh/)（备用镜像：同一版本另有备用镜像：[Netlify](https://three-ecumenical-creeds-study-continental-20261020-v10-ccser.netlify.app/) · [Surge](https://three-ecumenical-creeds-study-continental-20261020-v10-ccser.surge.sh/)） |
 | v9 · v20261017-9 | 全站字号体系；三信经页“本页一眼”与导读区块（整本圣经、圣经神学、圣约神学、改革宗读法、六角度）；辅助区块默认折叠；SVG 动画时间轴。 | 旧版本：[Netlify](https://three-ecumenical-creeds-study-continental-20261017-v9-grokstudy.netlify.app/) · [Surge](https://three-ecumenical-creeds-study-continental-20261017-v9-grokstudy.surge.sh/) |
 | v8 · v20261014-8 | 各条“核心一句 · 记忆钩 · 为何重要”；核心速记总表；参考站互证；篇幅数据图、环形图与北美地图；亚他那修信经编号差异说明。 | 旧版本：[Netlify](https://three-ecumenical-creeds-study-continental-20261014.netlify.app/) · [Surge](https://three-ecumenical-creeds-study-continental-20261014.surge.sh/)（v1–v8 共用这两个域名，现显示 v8） |
 | v7 · v20261014-7 | 使徒、尼西亚信经页加海德堡对应主日的紧凑经文参考行（程序核对）。 | 同上（已被覆盖） |
@@ -61,6 +71,8 @@ python3 tools/verify_recite.py creeds.html   # 背诵版（一条一行）与 CC
 python3 tools/verify_refs.py   # 经文参考行内列表 == CCI 数据
 python3 tools/verify_pdf.py    # 敬拜手册 2015 版摘引 == PDF 印刷正文（data/pdf/pdf2015.json，按页）
 python3 tools/qa.py [--nojs] [--rm]   # Playwright 五个宽度
+python3 tools/perf.py . hc.html memory.html   # 性能：TBT、CLS、长任务、滚动帧（4× CPU 降速）
+python3 tools/quotefix.py /tmp/unm.txt   # 未逐字找到的引号短语分类 → data/qfix.json（构建时去引号并标注）
 python3 tools/qa_toc.py hc.html --shots   # 目录拖拽/键盘/触摸/持久化
 python3 tools/audit_all.py more.py   # 引文核对（需本地爬取缓存）
 ```
