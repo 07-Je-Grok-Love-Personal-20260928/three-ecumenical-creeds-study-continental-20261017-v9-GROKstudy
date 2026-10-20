@@ -1,17 +1,33 @@
-# 三大公教会信经 · 欧陆改革宗深读（v20261020-10）
+# 三大公教会信经 · 欧陆改革宗深读
+
+**版本标签：three-ecumenical-creeds-study-continental-20261020-v10-CCstudy**（页脚版本 v20261020-10）
 
 使徒信经、尼西亚信经、亚他那修信经，以及三项联合信条（比利时信条、海德堡要理问答、多特信经）的中文综合学习网站（欧陆改革宗视角）。原文逐字取自 CCI《赞美手册》中文版；CCI 没有的内容用《中国改革宗教会敬拜手册》2015 版补充，逐字摘引并标页码（tools/verify_pdf.py 核对）。
 
-## 在线访问（v20261020-10 · GROKstudy，3 个部署）
-- GitHub Pages：https://07-je-grok-love-personal-20260928.github.io/three-ecumenical-creeds-study-continental-20261020-v10-GROKstudy/
-- Netlify：https://three-ecumenical-creeds-study-continental-20261020-v10grokstudy.netlify.app/
-- Surge：https://three-ecumenical-creeds-study-continental-20261020-v10grokstudy.surge.sh/
-- 仓库：https://github.com/07-Je-Grok-Love-Personal-20260928/three-ecumenical-creeds-study-continental-20261020-v10-GROKstudy
+## 当前版本链接（v10）
+- GitHub Pages：https://07-je-grok-love-personal-20260928.github.io/three-ecumenical-creeds-study-continental-GROKstudy/
+- Netlify：https://three-ecumenical-creeds-study-continental-20261020-v10-ccser.netlify.app/
+- Surge：https://three-ecumenical-creeds-study-continental-20261020-v10-ccser.surge.sh/
+- 仓库：https://github.com/07-Je-Grok-Love-Personal-20260928/three-ecumenical-creeds-study-continental-GROKstudy
 
-域名说明：Netlify 与 Surge 的子域名最长 63 个字符且只能小写；“…-20261020-v10-grokstudy”会是 64 个字符，所以域名里 v10 和 grokstudy 之间少一个连字符（v10grokstudy）。
+命名：仓库名只含主题（…-GROKstudy，以后不再改名）；Netlify / Surge 域名为“主题-日期-版本-ccser”（这两处只能小写），每个版本一个新域名，旧域名继续在线。
 
-**旧版本（仍在线）：** v20261017-9：[Netlify](https://three-ecumenical-creeds-study-continental-20261017-v9-grokstudy.netlify.app/) · [Surge](https://three-ecumenical-creeds-study-continental-20261017-v9-grokstudy.surge.sh/)；v20261014-8：[Netlify](https://three-ecumenical-creeds-study-continental-20261014.netlify.app/) · [Surge](https://three-ecumenical-creeds-study-continental-20261014.surge.sh/)。
-**注意：** 仓库每次更名后，旧的 GitHub Pages 地址都会失效；GitHub 只转发仓库地址，不转发 Pages。请用上面的新地址。
+## 版本记录
+
+| 版本 | 更新内容 | 仍可访问的链接 |
+|---|---|---|
+| **v10 · v20261020-10**（当前） | 用敬拜手册 2015 版补 CCI 缺的内容（主日敬拜中的信经、HC 印刷小标题），并与 CCI 逐字比对，差异列在来源页（正文仍用 CCI）；三信经与 HC、BC、Dort 各加五步动画故事线（每步带出处）与思维导图；按页面区分配色。 | 见上 |
+| v9 · v20261017-9 | 全站字号体系；三信经页“本页一眼”与导读区块（整本圣经、圣经神学、圣约神学、改革宗读法、六角度）；辅助区块默认折叠；SVG 动画时间轴。 | 旧版本：[Netlify](https://three-ecumenical-creeds-study-continental-20261017-v9-grokstudy.netlify.app/) · [Surge](https://three-ecumenical-creeds-study-continental-20261017-v9-grokstudy.surge.sh/) |
+| v8 · v20261014-8 | 各条“核心一句 · 记忆钩 · 为何重要”；核心速记总表；参考站互证；篇幅数据图、环形图与北美地图；亚他那修信经编号差异说明。 | 旧版本：[Netlify](https://three-ecumenical-creeds-study-continental-20261014.netlify.app/) · [Surge](https://three-ecumenical-creeds-study-continental-20261014.surge.sh/)（v1–v8 共用这两个域名，现显示 v8） |
+| v7 · v20261014-7 | 使徒、尼西亚信经页加海德堡对应主日的紧凑经文参考行（程序核对）。 | 同上（已被覆盖） |
+| v6 · v20261014-6 | 目录可拖拽调宽；背诵版一条一行；经文参考行内编号；参考站互证；数据对比。 | 同上（已被覆盖） |
+| v5 · v20261014-5 | 三信经结构目录（12 条、13 节、42 点 11 组）；背诵版与工具栏；三级标题；可勾选速记表。 | 同上（已被覆盖） |
+| v4 · v20261014-4 | 改为多页结构；逐字收录三信经与三项联合信条；参考网站转述；威斯敏斯特对照；三圈图、交叉引用图。 | 同上（已被覆盖） |
+| v3 · v20261014-3 | 使用 CCI《赞美手册》的信经原文与信条引文。 | 同上（已被覆盖） |
+| v2 · v20261014-2 | 中文分组阅读、内容扩充、动画与 SVG 图标。 | 同上（已被覆盖） |
+| v1 · v20261014-1 | 首版：三大信经综合学习单页。 | 同上（已被覆盖） |
+
+**GitHub Pages 注意：** 仓库曾多次更名（…-20261014 → …-20261017-v9-GROKstudy → …-20261020-v10-GROKstudy → 现名），旧的 Pages 地址都已失效；GitHub 只转发仓库地址，不转发 Pages。请用上面的 Pages 地址。
 
 ## 页面（13 页，共用可隐藏目录与统一编号）
 | 页面 | 内容 |
