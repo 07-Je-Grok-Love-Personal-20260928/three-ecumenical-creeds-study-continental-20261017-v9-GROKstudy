@@ -341,6 +341,15 @@ def part7():
     import c_refx
     b += core_l2()
     b += c_refx.l2('memory')
+    import notes as _n
+    _c=json.load(open("data/creeds.json",encoding="utf-8"))
+    _docs=[("使徒",'"'.join(_c["apostles"]["paras"])),("尼西亚",'"'.join(_c["nicene"]["paras"])),("亚他那修",'"'.join(_c["athanasian"]["paras"]))]
+    _terms=[("父","d-god"),("子","d-chr"),("圣灵","d-sp"),("神","d-god"),("主","d-chr"),("信","d-sal"),("永","d-cov"),("教会","d-ch")]
+    b += L2("mem-marks","11.x","核心词频与笔记标记速查",
+      '<p>按 CCI 中文原文逐字计数（构建时统计）。词频就是重心：使徒信经讲故事，尼西亚信经讲“子是谁”，亚他那修信经讲“三与一”。</p>'
+      + _n.wfreq(_docs,_terms)
+      + key("读图：亚他那修信经里<b>父、子、圣灵</b>的次数远超另两份——它的任务就是把三位与一体的边界一条条划清；使徒信经最短，却已包含全部骨架。")
+      + table(["标记","样式","用于","怎样记"],_n.MARK_TABLE))
     return L1("memory","十一","记忆与自测","brain","口诀、导图、翻卡、自测：把整站压缩进脑中。", b)
 
 
@@ -404,7 +413,7 @@ def sources():
       "<ul class='refs'><li>Philip Schaff, <i>The Creeds of Christendom</i>, vol. 1–2（1877；公有领域）。</li><li>J. N. D. Kelly, <i>Early Christian Creeds</i>（第3版，1972）；<i>The Athanasian Creed</i>（1964）。</li><li>John Calvin, <i>Institutes</i>（1559）II.16；Herman Bavinck, <i>Reformed Dogmatics</i> vol. 2–3。</li></ul>"
       + note("凡标“约”者，表示年代、作者、地点或礼仪习惯在学界或教会实践中存在不确定或差异。需要逐字核对信经与信条，请读第七至第十部分的 CCI 原文库。"))
     b += L2("src-ver","12.6","版本记录",
-      '<ul class="refs"><li><b>v20261020-10 · GROKstudy</b>：用敬拜手册 2015 版补 CCI 没有的内容（主日敬拜中的信经、HC 印刷小标题），并逐字比对差异（12.x）；三信经与 HC、BC、Dort 各加五步动画故事线（起因→危机→会议→文本→果效，每步带出处）与思维导图；配色按页面区分（使徒蓝、尼西亚珊瑚、亚他那修紫）。</li><li><b>v20261017-9 · GROKstudy</b>：全站字号体系（根字号 16.5–17.5px，正文行高 1.8，各类小字≥14px，地图与图表文字放大）；三份信经页顶部新增“本页一眼”，并各新增“0 导读区块”（整本圣经先行、圣经神学、圣约神学、欧陆改革宗读法、六个角度）；辅助区块（人物、补充解读、译本对照、经文依据、参考站互证等）默认折叠，目录跳转自动展开；仓库与部署域名改为 主题-日期-版本-GROKstudy 格式。</li><li><b>v20261014-8</b>：使徒信经 12 条、尼西亚信经 13 节、亚他那修信经 11 组，以及 BC、HC、Dort 各条目新增“🎯核心一句 · 🧠记忆钩 · 💡为何重要”；记忆页新增“核心速记总表”；使徒／尼西亚／亚他那修／比较／威斯敏斯特／BC／HC／Dort／记忆各页新增“参考站互证”（逐字引文构建时断言为 data/ref 抓取副本的子串，转述有标注，带原页链接）；新增三份信经的篇幅数据图、环形图与北美“今天谁在用”地图；亚他那修信经的编号差异补充：CCI 42 点，ccreformed.org 与 urcna.org 页 44 点，reformedbeginner.net 43 节。未能全文抓取：opc.org（箱子超时，仅 WebFetch 所选摘录）、prca.org（429，仅搜索摘录）。</li><li><b>v20261014-7</b>：使徒信经页 2.15、尼西亚信经页 3.x 新增“海德堡对应主日的经文参考”紧凑行（编号徽章行内连读，逐字取自 CCI，程序核对）；折叠箭头与小标签排版修整。</li><li><b>v20261014-6</b>：目录可拖拽调宽（鼠标/触摸/键盘，宽度存本机）；背诵版一条一行（小句连读，原文不改）；经文参考改为行内编号；新增 5.12 参考站互证（逐字引文程序核对）、5.13 数据对比（字数条与关键内容矩阵）；修复表格样式被误伤的问题。</li><li><b>v20261014-5</b>：二、三、四部分新增“结构目录”（使徒信经 12 条、尼西亚 13 节、亚他那修 42 点 11 组，各为三级标题，附 CCI 原文句、一句话与对照链接）；第七部分重做为背诵版（一行一句，原文不改，全显／首字提示／全遮／逐行跟读）；三项联合信条各部分改为三级标题，海德堡 52 主日用统一标题；记忆页增加可勾选速记表；动画、图标与排版细化。标题与“一句话”为本站学习用语，不是 CCI 原文。</li><li><b>v20261014-4</b>：多页结构；逐字收录三信经与三项联合信条；CCI 内容转述；参考网站；威斯敏斯特对照；三圈图、分层揭示、信条交叉引用图；进度记录。</li><li>v20261014-3：单页；亚他那修信经 CCI 全文；信条引文核对。</li><li>v20261014-2：纯中文、加深讲解、更多动画与图标。</li><li>v20261014-1：首版。</li></ul>')
+      '<ul class="refs"><li><b>v20261020-11 · GROKstudy</b>：性能（IntersectionObserver 滚动高亮、transform 进度条、目录折叠写进 HTML、减少毛玻璃、长小节按需渲染、去掉全屏漂移动画）；笔记标记系统（领域色术语、必背荧光、重点实线、难点波浪线、经文琥珀色、定义框、应用侧栏、记忆钉，图例可关闭）；背诵版按段着色、每行首句加粗（不改原文）；241 个未在 CCI 中逐字找到的引号短语去掉引号，标为“本站译文/其他译本措辞”（44）或“本站用语”（197）；记忆页加三信经词频图与标记速查表；删去讲解页里的抓取/程序说明。</li><li><b>v20261020-10 · GROKstudy</b>：用敬拜手册 2015 版补 CCI 没有的内容（主日敬拜中的信经、HC 印刷小标题），并逐字比对差异（12.x）；三信经与 HC、BC、Dort 各加五步动画故事线（起因→危机→会议→文本→果效，每步带出处）与思维导图；配色按页面区分（使徒蓝、尼西亚珊瑚、亚他那修紫）。</li><li><b>v20261017-9 · GROKstudy</b>：全站字号体系（根字号 16.5–17.5px，正文行高 1.8，各类小字≥14px，地图与图表文字放大）；三份信经页顶部新增“本页一眼”，并各新增“0 导读区块”（整本圣经先行、圣经神学、圣约神学、欧陆改革宗读法、六个角度）；辅助区块（人物、补充解读、译本对照、经文依据、参考站互证等）默认折叠，目录跳转自动展开；仓库与部署域名改为 主题-日期-版本-GROKstudy 格式。</li><li><b>v20261014-8</b>：使徒信经 12 条、尼西亚信经 13 节、亚他那修信经 11 组，以及 BC、HC、Dort 各条目新增“🎯核心一句 · 🧠记忆钩 · 💡为何重要”；记忆页新增“核心速记总表”；使徒／尼西亚／亚他那修／比较／威斯敏斯特／BC／HC／Dort／记忆各页新增“参考站互证”（逐字引文构建时断言为 data/ref 抓取副本的子串，转述有标注，带原页链接）；新增三份信经的篇幅数据图、环形图与北美“今天谁在用”地图；亚他那修信经的编号差异补充：CCI 42 点，ccreformed.org 与 urcna.org 页 44 点，reformedbeginner.net 43 节。未能全文抓取：opc.org（箱子超时，仅 WebFetch 所选摘录）、prca.org（429，仅搜索摘录）。</li><li><b>v20261014-7</b>：使徒信经页 2.15、尼西亚信经页 3.x 新增“海德堡对应主日的经文参考”紧凑行（编号徽章行内连读，逐字取自 CCI，程序核对）；折叠箭头与小标签排版修整。</li><li><b>v20261014-6</b>：目录可拖拽调宽（鼠标/触摸/键盘，宽度存本机）；背诵版一条一行（小句连读，原文不改）；经文参考改为行内编号；新增 5.12 参考站互证（逐字引文程序核对）、5.13 数据对比（字数条与关键内容矩阵）；修复表格样式被误伤的问题。</li><li><b>v20261014-5</b>：二、三、四部分新增“结构目录”（使徒信经 12 条、尼西亚 13 节、亚他那修 42 点 11 组，各为三级标题，附 CCI 原文句、一句话与对照链接）；第七部分重做为背诵版（一行一句，原文不改，全显／首字提示／全遮／逐行跟读）；三项联合信条各部分改为三级标题，海德堡 52 主日用统一标题；记忆页增加可勾选速记表；动画、图标与排版细化。标题与“一句话”为本站学习用语，不是 CCI 原文。</li><li><b>v20261014-4</b>：多页结构；逐字收录三信经与三项联合信条；CCI 内容转述；参考网站；威斯敏斯特对照；三圈图、分层揭示、信条交叉引用图；进度记录。</li><li>v20261014-3：单页；亚他那修信经 CCI 全文；信条引文核对。</li><li>v20261014-2：纯中文、加深讲解、更多动画与图标。</li><li>v20261014-1：首版。</li></ul>')
     import c_refx
     b += c_refx.manifest_l2()
     return L1("sources","十二","来源与说明","library","哪些是逐字收录、哪些是转述、哪些在 CCI 上没有找到。", b)
@@ -446,7 +455,7 @@ def toc_html(cur):
             if not kids: return f'<li class="t2"><a href="{f}#{sid}">{st}</a></li>'
             return (f'<li class="t2 has closed"><div class="t2r"><a href="{f}#{sid}">{st}</a><button class="tg2" type="button" aria-label="展开或收起三级标题" aria-expanded="false">▾</button></div><ol>'
                     +"".join(f'<li class="t3"><a href="{f}#{i}">{tt}</a></li>' for i,tt in kids)+"</ol></li>")
-        t+=f'<li class="t1{" cur" if page==cur else ""}" data-page="{page}"><div class="t1r"><a href="{f}#{id}">{title}</a><button class="tg" type="button" aria-label="展开或收起" aria-expanded="true">▾</button></div><ol>'+"".join(sub(s) for s in subs)+"</ol></li>"
+        t+=f'<li class="t1{" cur" if page==cur else " closed"}" data-page="{page}"><div class="t1r"><a href="{f}#{id}">{title}</a><button class="tg" type="button" aria-label="展开或收起" aria-expanded="{"true" if page==cur else "false"}">▾</button></div><ol>'+"".join(sub(s) for s in subs)+"</ol></li>"
     return t+"</ol></nav>"
 def tabs(cur):
     return '<nav class="ptabs" aria-label="页面导航">'+"".join(f'<a href="{f}"{" class=on aria-current=page" if k==cur else ""}>{t}</a>' for k,f,t,_ in PAGES)+'</nav>'
@@ -461,9 +470,9 @@ def page(cur,body,extra_cls=""):
     n={k:len(re.findall(r'<section class="l2',h)) for k,h in BODY.items()}
     title=LABEL[cur]+" · 三大公教会信经 · 欧陆改革宗深读" if cur!="index" else "三大公教会信经 · 欧陆改革宗深读（使徒·尼西亚·亚他那修与三项联合信条）"
     desc=DESC.get(cur) or re.sub(r'<[^>]+>','',re.search(r'<p class="lead">(.*?)</p>',body).group(1))+" 三大公教会信经 · 欧陆改革宗深读。"
-    return f'''<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{title} {V}</title><meta name="description" content="{H.escape(desc[:150])}"><meta name="theme-color" content="#070d22"><script>try{{var s=document.documentElement.style,a=+localStorage.getItem("tec4.tw"),m=+localStorage.getItem("tec4.twm"),w=innerWidth;if(a>=220&&a<=Math.min(680,w*.6))s.setProperty("--tw",a+"px");if(m>=240&&m<=Math.min(560,w*.94))s.setProperty("--twm",m+"px")}}catch(e){{}}</script><link rel="stylesheet" href="assets/styles.css?v={V}"></head><body data-page="{cur}" data-total="{n.get(cur,0)}">
+    return f'''<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{title} {V}</title><meta name="description" content="{H.escape(desc[:150])}"><meta name="theme-color" content="#070d22"><script>try{{var de=document.documentElement;de.classList.add("jsok");if(localStorage.getItem("mk.off")==="1")de.classList.add("mkoff");var s=de.style,a=+localStorage.getItem("tec4.tw"),m=+localStorage.getItem("tec4.twm"),w=innerWidth;if(a>=220&&a<=Math.min(680,w*.6))s.setProperty("--tw",a+"px");if(m>=240&&m<=Math.min(560,w*.94))s.setProperty("--twm",m+"px")}}catch(e){{}}</script><link rel="stylesheet" href="assets/styles.css?v={V}"></head><body data-page="{cur}" data-total="{n.get(cur,0)}">
 <div id="prog"></div>{toc_html(cur)}<div id="tocgrip" role="separator" aria-orientation="vertical" aria-label="拖动调整目录宽度（左右方向键微调，双击还原）" title="拖动调整目录宽度；双击还原" tabindex="0"></div><button id="tocbtn" class="fab" aria-label="显示目录" aria-controls="toc" type="button">☰ 目录</button>
-<main id="main">{tabs(cur)}{'' if cur=='index' else f'<p class="readchip">本页已读 <b id="pgread">0</b> / {n.get(cur,0)} 个小节（仅存于本机浏览器）</p>'}{'<div class="secbar"><b>🎯 阅读建议</b><span>先读彩色的核心、重点、难点；标有“辅助”的区块默认折叠，需要时再展开。</span><button class="btn ghost" type="button" data-secall="open">展开全部辅助</button><button class="btn ghost" type="button" data-secall="close">收起全部辅助</button></div>' if 'class="secd"' in body else ''}{body}{pager(cur)}<footer class="foot"><p>三大公教会信经 · 欧陆改革宗深读 · <b>{V}</b></p><p>以圣经为最高权威；信经与信条为从属标准。信经与信条原文取自 <a href="https://ccifellowship.org/books/book-of-praise" target="_blank" rel="noopener">CCI《赞美手册》中文版</a>。</p></footer></main>
+<main id="main">{tabs(cur)}{'' if cur=='index' else f'<p class="readchip">本页已读 <b id="pgread">0</b> / {n.get(cur,0)} 个小节</p>'}{'<div class="secbar"><b>🎯 阅读建议</b><span>先读彩色标记；“辅助”区块默认折叠。</span><button class="btn ghost" type="button" data-secall="open">展开全部辅助</button><button class="btn ghost" type="button" data-secall="close">收起全部辅助</button></div>' if 'class="secd"' in body else ''}{body}{pager(cur)}<footer class="foot"><p>三大公教会信经 · 欧陆改革宗深读 · <b>{V}</b></p><p>以圣经为最高权威；信经与信条为从属标准。信经与信条原文取自 <a href="https://ccifellowship.org/books/book-of-praise" target="_blank" rel="noopener">CCI《赞美手册》中文版</a>。</p></footer></main>
 <script>window.TEC={json.dumps({"v":V,"pages":[{"k":k,"f":f,"t":t,"n":n.get(k,0)} for k,f,t,_ in PAGES[1:]]},ensure_ascii=False)}</script>
 <script src="assets/app.js?v={V}" defer></script></body></html>'''
 
@@ -492,6 +501,20 @@ def index_body():
     return hero+prog+guide
 BODY["index"]=index_body()
 CUR["f"]="index.html"
+import notes,trim
+QF=json.load(open("data/qfix.json",encoding="utf-8")); QHIT={}
+DEEP={"bible","apostles","nicene","athanasian","compare","westminster","memory"}
+MKS={};CUT={}
 for k,f,_,_ in PAGES:
-    h=rewrite(k,BODY[k]); open(f,"w",encoding="utf-8").write(page(k,h))
+    h=rewrite(k,BODY[k])
+    h,hit=notes.qfix(h,QF)
+    for x,n in hit.items(): QHIT[x]=QHIT.get(x,0)+n
+    h,c=trim.cut(k,h); CUT[k]=c
+    out=page(k,h)
+    out,st=notes.apply(out,deep=k in DEEP,recite=True); MKS[k]=st
+    open(f,"w",encoding="utf-8").write(out)
+trim.check()
+_miss=[x for x in QF if x not in QHIT]
+assert not _miss, f"qfix 短语未出现：{_miss[:5]}"
+print("qfix",len(QHIT),"phrases",sum(QHIT.values()),"marks",{k:v for k,v in MKS.items() if v}); print("trim chars",CUT,sum(CUT.values()))
 print("built",[ (f,len(open(f,encoding="utf-8").read())) for _,f,_,_ in PAGES])
