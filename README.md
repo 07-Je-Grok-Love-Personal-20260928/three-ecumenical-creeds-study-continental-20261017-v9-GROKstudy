@@ -1,16 +1,16 @@
 # 三大公教会信经 · 欧陆改革宗深读
 
-**版本标签：three-ecumenical-creeds-study-continental-20261020-v11-GROKstudy**（页脚版本 v20261020-11）
+**版本标签：three-ecumenical-creeds-study-continental-20261021-v12-GROKstudy**（页脚版本 v20261021-12）
 
 使徒信经、尼西亚信经、亚他那修信经，以及三项联合信条（比利时信条、海德堡要理问答、多特信经）的中文综合学习网站（欧陆改革宗视角）。原文逐字取自 CCI《赞美手册》中文版；CCI 没有的内容用《中国改革宗教会敬拜手册》2015 版补充，逐字摘引并标页码（tools/verify_pdf.py 核对）。
 
-## 当前版本链接（v11）
+## 当前版本链接（v12）
 - GitHub Pages：https://07-je-grok-love-personal-20260928.github.io/three-ecumenical-creeds-study-continental-GROKstudy/
-- Netlify：https://three-ecumenical-creeds-study-continental-20261020-v11-grokser.netlify.app/
-- Surge：https://three-ecumenical-creeds-study-continental-20261020-v11-grokser.surge.sh/
+- Netlify：https://three-ecumenical-creeds-continental-20261021-v12-grokstudy.netlify.app/
+- Surge：https://three-ecumenical-creeds-continental-20261021-v12-grokstudy.surge.sh/
 - 仓库：https://github.com/07-Je-Grok-Love-Personal-20260928/three-ecumenical-creeds-study-continental-GROKstudy
 
-命名：仓库名只含主题（…-GROKstudy，以后不再改名）；Netlify / Surge 域名为“主题-日期-版本-grokser”（这两处只能小写），每个版本一个新域名，旧域名继续在线。
+命名：仓库名只含主题（…-GROKstudy，以后不再改名）；Netlify / Surge 域名为“主题-日期-版本-grokstudy”（v12 起后缀由 grokser 改为 grokstudy；这两处只能小写），每个版本一个新域名，旧域名继续在线。**v12 域名去掉了主题里的 study：** 完整写法 three-ecumenical-creeds-study-continental-20261021-v12-grokstudy 有 64 个字符，超过 Netlify / Surge 子域名 63 字符上限，所以用 three-ecumenical-creeds-continental-20261021-v12-grokstudy（study 已含在 grokstudy 里）。
 
 ## 发布（Releases）——随时恢复
 
@@ -18,14 +18,17 @@
 
 | 标签 | 说明 | 链接 |
 |---|---|---|
-| `v20261020-11` | v11 当前版本：性能、笔记标记系统、引号标注 | https://github.com/07-Je-Grok-Love-Personal-20260928/three-ecumenical-creeds-study-continental-GROKstudy/releases/tag/v20261020-11 |
+| `v20261021-12` | v12 当前版本（2026-10-21 台北）：记忆图标、干净背诵版、问答分色、四套主题 | https://github.com/07-Je-Grok-Love-Personal-20260928/three-ecumenical-creeds-study-continental-GROKstudy/releases/tag/v20261021-12 |
+| `v20261021-0` | 更新前快照（2026-10-21 台北）：t87 改动前的线上 main（0aa6069，与 v11 线上内容一致） | https://github.com/07-Je-Grok-Love-Personal-20260928/three-ecumenical-creeds-study-continental-GROKstudy/releases/tag/v20261021-0 |
+| `v20261020-11` | v11：性能、笔记标记系统、引号标注 | https://github.com/07-Je-Grok-Love-Personal-20260928/three-ecumenical-creeds-study-continental-GROKstudy/releases/tag/v20261020-11 |
 | `v20261020-10` | v10：CCI 逐字、故事线、思维导图、敬拜手册 2015 补缺 | https://github.com/07-Je-Grok-Love-Personal-20260928/three-ecumenical-creeds-study-continental-GROKstudy/releases/tag/v20261020-10 |
 
 ## 版本记录
 
 | 版本 | 更新内容 | 仍可访问的链接 |
 |---|---|---|
-| **v11 · v20261020-11**（当前） | 性能：IntersectionObserver 滚动高亮、transform 进度条、目录折叠写进 HTML（CLS 约 0.1–0.26 → ≤0.06）、减少毛玻璃、长小节按需渲染、去掉全屏漂移动画；笔记标记系统（同三项联合信条站，图例可关闭）；背诵版按段着色、每行首句加粗（不改原文）；241 个未在 CCI 逐字找到的引号短语去掉引号，标为“本站译文/其他译本措辞”（44）或“本站用语”（197）；记忆页三信经词频图与标记速查表；删去讲解页的抓取/程序说明与重复列。 | 见上 |
+| **v12 · v20261021-12**（当前） | 目录与正文标题前加记忆图标（52 主日、37 条、多特条目、信经各条各一图）；原文/背诵区的经文参考、原文页链接与学习提示默认折叠（干净背诵版，一键全部展开/收起）；129 问问答分色（金色 Q 条、绿色 A 条）；四套可切换主题（🌌 深夜星空 · 🌅 晨光暖白 · 🏞️ 青绿山水 · 🍇 葡萄紫韵，存在本机，首屏前应用不闪烁）；图标记忆地图、问答结构图；年份蓝色虚线标记；主题对比度检查 tools/contrast.py（WCAG AA）。 | 见上 |
+| v11 · v20261020-11 | 性能：IntersectionObserver 滚动高亮、transform 进度条、目录折叠写进 HTML（CLS 约 0.1–0.26 → ≤0.06）、减少毛玻璃、长小节按需渲染、去掉全屏漂移动画；笔记标记系统（同三项联合信条站，图例可关闭）；背诵版按段着色、每行首句加粗（不改原文）；241 个未在 CCI 逐字找到的引号短语去掉引号，标为“本站译文/其他译本措辞”（44）或“本站用语”（197）；记忆页三信经词频图与标记速查表；删去讲解页的抓取/程序说明与重复列。 | 旧版本：[Netlify](https://three-ecumenical-creeds-study-continental-20261020-v11-grokser.netlify.app/) · [Surge](https://three-ecumenical-creeds-study-continental-20261020-v11-grokser.surge.sh/) |
 | v10 · v20261020-10 | 用敬拜手册 2015 版补 CCI 缺的内容（主日敬拜中的信经、HC 印刷小标题），并与 CCI 逐字比对，差异列在来源页（正文仍用 CCI）；三信经与 HC、BC、Dort 各加五步动画故事线（每步带出处）与思维导图；按页面区分配色。 | 旧版本：[Netlify](https://three-ecumenical-creeds-study-continental-20261020-v10-grokser.netlify.app/) · [Surge](https://three-ecumenical-creeds-study-continental-20261020-v10-grokser.surge.sh/)（备用镜像：同一版本另有备用镜像：[Netlify](https://three-ecumenical-creeds-study-continental-20261020-v10-ccser.netlify.app/) · [Surge](https://three-ecumenical-creeds-study-continental-20261020-v10-ccser.surge.sh/)） |
 | v9 · v20261017-9 | 全站字号体系；三信经页“本页一眼”与导读区块（整本圣经、圣经神学、圣约神学、改革宗读法、六角度）；辅助区块默认折叠；SVG 动画时间轴。 | 旧版本：[Netlify](https://three-ecumenical-creeds-study-continental-20261017-v9-grokstudy.netlify.app/) · [Surge](https://three-ecumenical-creeds-study-continental-20261017-v9-grokstudy.surge.sh/) |
 | v8 · v20261014-8 | 各条“核心一句 · 记忆钩 · 为何重要”；核心速记总表；参考站互证；篇幅数据图、环形图与北美地图；亚他那修信经编号差异说明。 | 旧版本：[Netlify](https://three-ecumenical-creeds-study-continental-20261014.netlify.app/) · [Surge](https://three-ecumenical-creeds-study-continental-20261014.surge.sh/)（v1–v8 共用这两个域名，现显示 v8） |
