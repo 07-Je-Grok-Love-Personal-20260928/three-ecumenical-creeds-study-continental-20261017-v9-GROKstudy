@@ -513,6 +513,7 @@ for k,f,_,_ in PAGES:
     out=page(k,h)
     out,st=notes.apply(out,deep=k in DEEP,recite=True); MKS[k]=st
     out=t87.post(out,fold=k in {"creeds","hc","bc","dort"})
+    out,_ny=t87.extras(out,k,"tec")
     open(f,"w",encoding="utf-8").write(out)
 trim.check()
 _miss=[x for x in QF if x not in QHIT]
