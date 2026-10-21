@@ -501,7 +501,7 @@ def index_body():
     return hero+prog+guide
 BODY["index"]=index_body()
 CUR["f"]="index.html"
-import notes,trim
+import notes,trim,t87
 QF=json.load(open("data/qfix.json",encoding="utf-8")); QHIT={}
 DEEP={"bible","apostles","nicene","athanasian","compare","westminster","memory"}
 MKS={};CUT={}
@@ -512,6 +512,7 @@ for k,f,_,_ in PAGES:
     h,c=trim.cut(k,h); CUT[k]=c
     out=page(k,h)
     out,st=notes.apply(out,deep=k in DEEP,recite=True); MKS[k]=st
+    out=t87.post(out,fold=k in {"creeds","hc","bc","dort"})
     open(f,"w",encoding="utf-8").write(out)
 trim.check()
 _miss=[x for x in QF if x not in QHIT]
