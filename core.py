@@ -3,7 +3,7 @@
 from content import *
 from extra import *
 import html as H
-V = "v20261021-12"
+V = "v20261021-13"
 CUR = {"f": None, "n": 0, "c2": 0}
 PEND = []
 PEND3 = []
