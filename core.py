@@ -3,7 +3,7 @@
 from content import *
 from extra import *
 import html as H
-V = "v20261021-13"
+V = "v20261023-14"
 CUR = {"f": None, "n": 0, "c2": 0}
 PEND = []
 PEND3 = []
@@ -59,7 +59,7 @@ CITY = {"罗马":(12.5,41.9),"尼西亚":(29.7,40.4),"君士坦丁堡":(29.0,41.
 "迦太基":(10.3,36.85),"老底嘉":(35.8,35.5),"耶路撒冷":(35.2,31.8),"里昂":(4.8,45.75),"米兰":(9.2,45.5),"希坡":(7.75,36.9),"该撒利亚(卡帕多家)":(35.5,38.7)}
 def xy(n):
     lon,lat = CITY[n]; return (lon+10)*18+20, (48-lat)*24+20
-OFF={'君士坦丁堡':(-12,-12,'end'),'尼西亚':(12,22,'start'),'迦克墩':(14,2,'start'),'老底嘉':(12,16,'start'),'安提阿':(12,-4,'start'),'勒兰岛':(10,20,'start'),'阿尔勒':(-12,-8,'end'),'里昂':(-12,4,'end')}
+OFF={'君士坦丁堡':(-12,-12,'end'),'尼西亚':(12,22,'start'),'迦克墩':(14,-14,'start'),'老底嘉':(12,16,'start'),'安提阿':(12,-4,'start'),'勒兰岛':(10,20,'start'),'阿尔勒':(-12,-8,'end'),'里昂':(-12,4,'end')}
 def mapsvg(id, title, pts, routes=(), hl=()):
     s = f'<figure class="map reveal"><svg viewBox="0 0 1040 470" role="img" aria-label="{title}"><defs><linearGradient id="g{id}" x1="0" x2="1"><stop offset="0" stop-color="#2a3f7a" stop-opacity=".55"/><stop offset=".53" stop-color="#2a3f7a" stop-opacity=".25"/><stop offset=".53" stop-color="#7a4e2a" stop-opacity=".25"/><stop offset="1" stop-color="#7a4e2a" stop-opacity=".5"/></linearGradient></defs>'
     s += f'<rect x="0" y="0" width="1040" height="470" rx="18" fill="url(#g{id})"/>'
