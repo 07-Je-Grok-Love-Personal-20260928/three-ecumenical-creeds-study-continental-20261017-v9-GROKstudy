@@ -18,7 +18,7 @@
 
 | 标签 | 说明 | 链接 |
 |---|---|---|
-| `v20261023-14` | v14 当前版本（2026-10-21 台北）：地图双层（概念图＋本地静态真实地图，无 CDN）、新史地地图、导航簇、历史文化背景块、标记加强 | https://github.com/07-Je-Grok-Love-Personal-20260928/three-ecumenical-creeds-study-continental-GROKstudy/releases/tag/v20261023-14 |
+| `v20261023-14` | v14 当前版本（2026-10-23 台北）：地图双层（概念图＋本地静态真实地图，无 CDN）、新史地地图、导航簇、历史文化背景块、标记加强 | https://github.com/07-Je-Grok-Love-Personal-20260928/three-ecumenical-creeds-study-continental-GROKstudy/releases/tag/v20261023-14 |
 | `v20261021-13` | v13（恢复点：t89 前的线上版本）（2026-10-21 台北）：性能（CLS≈0、去发光循环动画）、浅色主题原生图示、一键主题条、一句话核心与只看核心 | https://github.com/07-Je-Grok-Love-Personal-20260928/three-ecumenical-creeds-study-continental-GROKstudy/releases/tag/v20261021-13 |
 | `v20261021-12` | v12（恢复点：t88 前的线上版本 a0e7276，t88 未另打快照标签）（2026-10-21 台北）：记忆图标、干净背诵版、问答分色、四套主题 | https://github.com/07-Je-Grok-Love-Personal-20260928/three-ecumenical-creeds-study-continental-GROKstudy/releases/tag/v20261021-12 |
 | `v20261021-0` | 更新前快照（2026-10-21 台北）：t87 改动前的线上 main（0aa6069，与 v11 线上内容一致） | https://github.com/07-Je-Grok-Love-Personal-20260928/three-ecumenical-creeds-study-continental-GROKstudy/releases/tag/v20261021-0 |
